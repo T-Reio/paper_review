@@ -1,71 +1,64 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.sjis) (TeX Live 2021/W32TeX) (preloaded format=platex 2021.12.21)  10 JAN 2022 14:06
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  10 JAN 2022 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **test -interaction=nonstopmode -halt-on-error -file-line-error
-(c:/Users/easyu/paper_review/test.tex
-pLaTeX2e <2020-10-01>+2 (based on LaTeX2e <2020-10-01> patch level 4)
-L3 programming layer <2021-02-18> (c:/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-Document Class: jsarticle 2020/10/09 jsclasses (okumura, texjporg)
-\jsc@mpt=\dimen154
-\jsc@mmm=\dimen155
-\jsc@smallskipamount=\skip47
-LaTeX Info: Redefining \textmc on input line 497.
-LaTeX Info: Redefining \textgt on input line 499.
+(c:/Users/easyu/paper_review/paper_review/test.tex
+pLaTeX2e <2018-04-01>+1 (based on LaTeX2e <2018-04-01> patch level 2)
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2018/03/11 jsclasses (okumura, texjporg)
+\jsc@mpt=\dimen118
+\jsc@mmm=\dimen119
+\jsc@smallskipamount=\skip41
+LaTeX Info: Redefining \rmfamily on input line 466.
+LaTeX Info: Redefining \sffamily on input line 469.
+LaTeX Info: Redefining \ttfamily on input line 472.
+LaTeX Info: Redefining \textmc on input line 476.
+LaTeX Info: Redefining \textgt on input line 478.
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 561.
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 540.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 755.
+(Font)              scaled to size 9.60999pt on input line 731.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 755.
-\fullwidth=\dimen156
+(Font)              scaled to size 9.60999pt on input line 731.
+\fullwidth=\dimen120
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 908.
+(Font)              scaled to size 7.68799pt on input line 884.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 908.
-\c@part=\count178
-\c@section=\count179
-\c@subsection=\count180
-\c@subsubsection=\count181
-\c@paragraph=\count182
-\c@subparagraph=\count183
-\@abstractbox=\box64
-\c@figure=\count184
-\c@table=\count185
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\jsc@tocl@width=\dimen157
-\@lnumwidth=\dimen158
-\bibindent=\dimen159
-(c:/texlive/2021/texmf-dist/tex/platex/jsclasses/jslogo.sty
-Package: jslogo 2019/07/25 okumura, texjporg
-LaTeX Info: Redefining \TeX on input line 82.
-LaTeX Info: Redefining \LaTeX on input line 135.
-LaTeX Info: Redefining \LaTeXe on input line 188.
+(Font)              scaled to size 7.68799pt on input line 884.
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\@abstractbox=\box42
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\jsc@tocl@width=\dimen121
+\@lnumwidth=\dimen122
+\bibindent=\dimen123
+(c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2017/02/24 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 94.
+LaTeX Info: Redefining \LaTeX on input line 147.
+LaTeX Info: Redefining \LaTeXe on input line 200.
 )
-\heisei=\count186
-) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2021-03-18 L3 backend support: dvips
-\l__pdf_internal_box=\box65
-\g__pdf_backend_object_int=\count187
-\l__pdf_backend_content_box=\box66
-\l__pdf_backend_model_box=\box67
-\g__pdf_backend_annotation_int=\count188
-\g__pdf_backend_link_int=\count189
-\g__pdf_backend_link_sf_int=\count190
-) (c:/Users/easyu/paper_review/test.aux)
+\heisei=\count91
+) (c:/Users/easyu/paper_review/paper_review/test.aux)
 \openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -87,14 +80,14 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 4.
  [1
 
-] (c:/Users/easyu/paper_review/test.aux) ) 
+] (c:/Users/easyu/paper_review/paper_review/test.aux) ) 
 Here is how much of TeX's memory you used:
- 609 strings out of 479466
- 9652 string characters out of 5873880
- 301252 words of memory out of 5000000
- 18380 multiletter control sequences out of 15000+600000
- 408535 words of font info for 52 fonts, out of 8000000 for 9000
+ 429 strings out of 493281
+ 4745 string characters out of 6148126
+ 67663 words of memory out of 5000000
+ 4439 multiletter control sequences out of 15000+600000
+ 8745 words of font info for 39 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 54i,4n,60p,201b,169s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,4n,20p,193b,164s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on test.dvi (1 page, 364 bytes).
+Output written on test.dvi (1 page, 336 bytes).
