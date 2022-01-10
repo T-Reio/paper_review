@@ -1,0 +1,425 @@
+\documentclass[dvipdfmx,11pt]{beamer}
+%\graphicspath{{fig_tab/os_presentation/20201215/}}
+\usepackage{lipsum}
+\usetheme{verona}
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage{ascmac}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\hypersetup{% hyperrefオプションリスト
+ setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=blue,
+ citecolor=blue,
+ urlcolor = magenta
+}
+\setbeamertemplate{navigation symbols}{}
+
+\title[お年玉下さい]{経済学っぽい論文を書こう！}
+\subtitle{}
+\author{Reio TANJI}
+\date{Jan 5th, 2022 \\ Sasaki Seminar}
+\institute[OU Graduate School of Economics]{Osaka University, Graduate School of Economics}
+
+\begin{document}
+\begin{frame}\frametitle{}
+\titlepage
+\end{frame}
+
+\begin{frame}{あけましておめでとうございます！}
+  \begin{itemize}
+    \item 関係ないスライド
+    \item 今年もよろしくお願いします
+    \item お年玉下さい
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{目的}
+  \begin{itemize}
+    \item Rはだいたいできると思うので、検証する問いを経済学っぽくしよう
+    \begin{itemize}
+      \item みんなぼくよりむずかしいことやってる
+      \item 何ならもうRの講義要らないっしょ、知識の共有ツールも渡したからインストールから基本的な作業まで各自でできるはず
+    \end{itemize}
+    \item 問いの立て方や結果の議論に詰められるところがある
+    \begin{itemize}
+      \item 経済学のフレームワークを共有し、その中で研究発表を行うことで、他の班の話が分かる
+    \end{itemize}
+    \item そもそも行動経済学とは？モデルに基づいた仮説を立てるとはどういうことか
+    \begin{itemize}
+      \item 来年は教科書の輪読をやっても良いんじゃないでしょうか
+      \item 佐々木勝先生『スポーツの経済学』
+      \item 大竹文雄先生『競争社会の歩き方』『行動経済学の使い方』
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{Introduction}
+\frame{\sectionpage}
+
+\begin{frame}{行動経済学とは}
+  \begin{itemize}
+    \item 伝統的経済学の応用
+    \begin{itemize}
+      \item 伝統的経済学の仮定
+      \begin{itemize}
+        \item 選好は外生的
+        \item 選好は合理的
+      \end{itemize}
+    \end{itemize}
+    \item 従来のモデルにはあてはまらない現実の意思決定や行動選択を説明できるよう、モデルの修正を行う
+    \begin{itemize}
+      \item 「説明できる」とは？：(通常)数式を用いて計算によって選択される行動を導くことができる
+      \item 新たな仮定を加えたり、これまで妥当とみなしていた仮定を緩めるとモデルは複雑になる：どこまで複雑さを受け入れるべきか？
+    \end{itemize}
+    \item 数式をどのように修正すべきか：心理学の知見を応用する
+    \begin{itemize}
+      \item 利得よりも損失に強く反応する、小さな確率を過大評価するといった行動特性を反映した関数を考案、これらを用いて行動分析を行う
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section{伝統的経済学のフレームワーク}
+\frame{\sectionpage}
+
+\begin{frame}{伝統的経済学}
+  \begin{itemize}
+    \item 数学を用いた伝統的経済学の分析アプローチ
+    \begin{itemize}
+      \item 人間の意思決定を「目的関数の最大化」に落とし込む
+      \begin{itemize}
+        \item[ex.)] 1杯800円のラーメン1杯から1000、2杯から800の効用を得る
+      \end{itemize}
+    \end{itemize}
+    \item 効用関数
+    \begin{itemize}
+      \item $u(x)$: それぞれの選択肢を1次元ないしそれ以上の次元の値の組によって表現
+      \begin{itemize}
+        \item ハガキ1葉: $x = 1$
+        \item ちょうちょ3頭、うさぎ5羽: $(x, y) = (3, 5)$
+      \end{itemize}
+      \item 関数$u(x)$は、$x$の値が決まれば一意の値を返す
+      \item 利用可能な集合$x, y$について、$u(x) \geq u(y)$が成り立つならば、その個人は$y$より$x$をより好む
+      \item「好む」をどう定義するか？
+      \begin{itemize}
+        \item アンケートで訊く
+        \item 顕示選好：実際に選んだ選択肢から好みを明らかにする
+      \end{itemize} 
+    \end{itemize}
+    \item それぞれの選択肢をポイント化して扱うことができれば扱いが楽
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{選好の合理性と効用関数}
+  \begin{itemize}
+    \item 人の好みをシンプルな関数で表現していいのか？
+    \item 関数で表現された選好によるアプローチが正当化される理由：人間の選好、すなわち好みや選択行動のルールに対して、直感的に妥当であると認められる仮定を課している
+    $\Rightarrow$ 入手可能な消費財のセット$x$に対する選好を関数で表現可能である
+    \begin{itemize}
+      \item 選好 $\succsim $: 複数の財のセットを提示されたときに、両者のどちらをより好むかを示す関係性: $A \succsim B$\dots AをBと同等かそれ以上に好む
+      \item 選好が合理性と連続性を満たすとき、この選好関係を効用関数で表すことができる
+    \end{itemize}
+    \item 合理性: 選好が推移性と完備性とを満たしている状態
+    \item 連続性については省略
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{合理性}
+  \begin{itembox}[l]{完備性 completeness}
+    \begin{itemize}
+      \item 選択肢$A$と$B$を提示されたときに、$A \succsim B$ もしくは $B \succsim A$の少なくとも一方が成立する
+      \begin{itemize}
+        \item 両方が成立しても良い
+        \item 「えーわからんw」がない
+      \end{itemize}
+    \end{itemize}
+  \end{itembox}
+  \begin{itembox}[l]{推移性 transitivity}
+    \begin{itemize}
+      \item $A \succsim B$ と $B \succsim C$ が同時に成り立つとき、$A \succsim C$が必ず成り立つ
+      \begin{itemize}
+        \item ペンギンよりサルが好き、サルよりカメが好きなのに、カメよりペンギンの方が好きであってはいけない
+      \end{itemize}
+    \end{itemize}
+  \end{itembox}
+  \begin{itemize}
+    \item 基本的なレベルでの伝統的経済学では、人々の好みがこの2つの条件を必ず満たしていることを前提に話を進める
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item[ex.)] 初売りのくじ引きでみかんとゆずのセットをもらった
+     
+   \item みかんとゆずの消費量をそれぞれ$x_1, x_2$、$x = (x_1, x_2)$に対する効用関数を$u(x) = x_1^{\frac{1}{2}}x_2^{\frac{1}{2}}$とする
+    \begin{itemize}
+      \item 仮定していること
+      \begin{itemize}
+        \item 評価基準：みかんとゆずのセットはその個数で評価できる
+        \item 関数形：Cobb-Douglas型の効用関数
+        \item $u(x)$は$x_1, x_2$について単調増加であり、それぞれの消費量に対する限界効用は逓減する
+      \end{itemize}
+      \item みかん1個とゆず9個のセットか、みかん16個とゆず4個のセットの好きな方を選んでいいものとする
+      \begin{itemize}
+        \item 選択集合は $\mathbb{X} = \{(1, 9), (16, 4)\}$
+      \end{itemize}
+      \item $x = (1, 9), y = (16, 4)$とすると、
+      \begin{align*}
+        & u(x) - u(y) \\
+        =& \sqrt{1} \times \sqrt{9} - \sqrt{16} \times \sqrt{4} \\
+        &= 3 - 8 < 0
+      \end{align*}
+      $u(y) > u(x)$であるから、この個人はセット$x$よりセット$y$からより大きな効用を得ることが分かる。
+      \item "理論的には" みかん16、ゆず4のセットを選ぶことが予想される 
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{価格の導入}
+  \begin{itemize}
+    \item[問.] みかん1個の価格$p_1$が50円、ゆず1個のそれ$p_2$が100円で、前のスライドで仮定したような効用関数を持つ個人が1000円の予算の下で2つの果物を自由に消費することを考える。この時、この個人が消費するみかんとゆずの数はそれぞれ何個か。
+    \item 予算制約
+    \[p_1 x_1 + p_2 x_2 \leq w \tag{1}\]
+    \begin{itemize}
+      \item ワルラス法則：効用関数が局所非飽和性を満たす場合、最適な消費の組は予算制約(1)の等号を成立させる
+    \end{itemize}
+    \item 最大化問題
+    \[\max_{x_1, x_2} U = x_1^{\frac{1}{2}}x_2^{\frac{1}{2}} - p_1 x_1 - p_2 x_2 \tag{2} \]
+    \begin{itemize}
+      \item 予算制約の下で、上の効用関数を最大化すればよい
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item 予算制約の等号が成立するので、
+    \[x_2 = \dfrac{1}{p_2} (w - p_1 x_1)\]
+    \item これを最大化問題に代入すれば、
+    \begin{align*}
+      \max_{x_1} & x_1^{\frac{1}{2}} \left(\dfrac{1}{p_2} (w - p_1 x_1) \right)^{\frac{1}{2}} - w
+    \end{align*}
+    これを最大化するような$x_1$を求める
+    \begin{itemize}
+      \item 最適化の1階条件 
+      \[\dfrac{\partial U}{\partial x_1} = 0\]
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item 合成関数の微分
+    \begin{align*}
+    \dfrac{1}{2}\left( \dfrac{w}{p_2} - \dfrac{p_1}{p_2} x_1 \right)^{\frac{1}{2}} x_1 + \dfrac{1}{2}\left( \dfrac{w}{p_2} - \dfrac{p_1}{p_2} x_1 \right)^{-\frac{1}{2}} \cdot \left(-\dfrac{p_1}{p_2}x_1 \right) = 0
+    \end{align*}
+    第2項を移項して両辺に$\left( \frac{w}{p_2} - \frac{p_1}{p_2} x_1 \right)^{1/2}$ を掛ける
+    \begin{align*}
+      \left( \dfrac{w}{p_2} - \dfrac{p_1}{p_2} x_1 \right) &= \dfrac{p_1}{p_2} x_1 \\
+      x_1 &= \dfrac{1}{2} \cdot \dfrac{1}{p_1}w
+    \end{align*}
+    対称性より $x_2 = \dfrac{1}{2} \cdot \dfrac{1}{p_2}w$
+    \item $w = 1000, p_1 = 50, p_2 = 100$ なので、この個人が消費するみかんの数は10個、ゆずは5個
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{経済学の仮説を立てる}
+  \begin{itemize}
+    \item この「みかん10個、ゆず5個」が、経済学の理論から得られる仮説
+    \item 実証研究において、実際にここまでモデルを精緻化して予測を立てることは多くないが、例えば「みかんの価格だけが上がった時にどのような変化が起こるか」「国から柑橘類を買うための補助金が出た時にそれをどう振り分けるか」をモデルから予測することは可能
+    \item 行動経済学・労働経済学をやる前に、選択必修で習ったミクロ経済学の基礎を復習しておくことが重要
+  \end{itemize}
+\end{frame}
+
+\section{行動経済学のフレームワークを導入}
+\frame{\sectionpage}
+
+\begin{frame}{伝統的経済学の問題点に対処する}
+  \begin{itemize}
+    \item 伝統的経済学では、計算上の煩雑さを避けるなどの目的で、選好や効用関数の形状に様々な仮定を課している
+    \begin{itemize}
+      \item 選好は外生的である
+      \begin{itemize}
+        \item 個人の選好は時間を通じて一貫している
+        \item 状況に応じて変化することがない
+      \end{itemize}
+      \item 完全情報
+      \begin{itemize}
+        \item 個人は自身の意思決定を取り巻くリスクについて、その確率分布や将来の変化に関する情報を全て把握している
+        \item 将来の自身の行動をそれより前の時点で決定し、それを履行することができる (コミットメント)
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item どのような仮定を置いたとしても、選好の合理性と連続性が満たされている限り、それに対応する効用関数を定義すれば、目的関数を最適化するというアプローチで分析を行うことができる
+    \item ただし、仮定の仕方によっては、モデルを用いた分析結果と実際に観察される行動にズレが生じてしまう可能性がある: misspecification
+    \item そのズレが生じた結果、従来のモデルでは選好の合理性が満たされなくなってしまうと、効用関数を定義することが数学的に不可能になる
+    \begin{itemize}
+      \item こうしたズレに対応するために導入される方法のひとつが行動経済学である
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{「非合理的」とは？}
+  \begin{itemize}
+    \item 伝統的経済学が仮定する「合理性」は一般的な文脈で使われるそれと意味が異なる
+    \begin{itemize}
+      \item 「行動経済学では、人間が非合理的な行動を取ることを考慮して～」：「推移性」「完備性」のいずれかが満たされないような選択をする個人の例がいる
+      \item 客観的に見て：得られる金銭その他のポイントを評価基準にした時に、合理性を満たさないような選択をする人がいるため、従来の関数形では意味のある分析ができない
+      \begin{itemize}
+        \item 合理性を満たすことに対して何らかの価値判断を行う：そうあるべきだと主張したいわけではないことに注意する
+      \end{itemize}
+    \end{itemize}
+    \item 合理性を満たすように関数形を修正する
+    \begin{itemize}
+      \item 評価対象となるアウトカムを変える
+      \item 効用関数の関数形を変更する
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{プロスペクト理論}
+  \begin{itemize}
+    \item Kahneman and Tversky (1979)
+    \item 心理学の知見に基づいてモデルを修正し、従来の関数形では合理性の仮定を満たさなかった事象も合理性の枠組みの中で扱えるようにする
+    \item 2つの主要なアプローチ
+    \begin{itemize}
+      \item 損失回避
+      \item 確率加重
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{損失回避}
+  \begin{itemize}
+    \item 従来のフレームワークにおける仮定: 同一の選択肢から、常に同一水準の効用を得る
+    \item[ex.)] 時給$x$円のアルバイトから得られる効用水準を表す効用関数を$u(x) = \ln x$とする
+    \begin{itemize}
+      \item 時給5,000円のアルバイトの効用水準は常に$\ln 5000$ で一定
+      \item それぞれの場合の(心理的・時間的その他)費用を無視すると、時給2,000円のバイトよりは常に効用水準が高いはず
+    \end{itemize} 
+    \item 実際には、それ以前の賃金がいくらだったかによって、同じ賃金でも効用水準が変化する可能性がある
+    \begin{itemize}
+      \item 2021年まで950円だった時給が5,000円に上がった
+      \item 10,000円だった時給が5,000円に下がった
+      \item (同じ人物に起こった出来事であったとしても)両者がもたらす効用は同じであると言えるか？
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{何をもって「損失」とするか？}
+  \begin{itemize}
+    \item 利得と損失を定義するためには、その基準となるアウトカムの水準が必要: 参照点
+    \item 時給の例: 過去の時給が参照点になっており、そこからの差の正負を利得・損失の分岐点としている
+    \item 過去の水準が存在しない場合は？
+    \begin{itemize}
+      \item キリの良い数字を目標にする
+      \begin{itemize}
+        \item TOEICの受験: 500点台に乗るまで受験を続ける
+        \item 打率が.300に乗ったら試合に出るのを止める
+      \end{itemize}
+      \item ゲームのシステムが参照点を決定するケース
+      \begin{itemize}
+        \item ゴルフ: パーの打数を参照点にする
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{確率加重}
+  \begin{itemize}
+    \item 期待効用理論: 同一の選択肢に対して複数のアウトカムが発生する可能性がある場合に効用の期待値をとっても良いとみなす
+    \begin{itemize}
+      \item 一般的な効用関数は「どちらが良いか」のみを記述しており、その差の大小については言及していない
+    \end{itemize}
+    \item 期待効用理論では、人間が客観的な確率を正しく認知できることを仮定する
+    \item 利得$x_1$の事象1が確率$p_1$、同じく2が$p_2$で発生するくじから得られる期待効用
+    \[EU = EU[X] = p_1 x_1 + p_2 x_2\]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{有名なやつ}
+  \begin{itemize}
+    \item くじ引きのやつ
+    \begin{itembox}[l]{質問1}
+      \begin{enumerate}
+        \item[A] 90\%の確率で11,000円が得られるクジ
+        \item[B] 100\%の確率で10,000円が得られるクジ
+      \end{enumerate}
+    \end{itembox}
+    \begin{itembox}[l]{質問2}
+      \begin{enumerate}
+        \item[C] 0.9\%の確率で11,000円が得られるクジ
+        \item[D] 1\%の確率で11,000円が得られるクジ
+      \end{enumerate}
+    \end{itembox}
+    \item 質問Aと質問Bとで選んだ選択肢の番号が違う人の行動は、従来のフレームワークでは説明が難しい
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item 質問1でB、質問Aで1を選ぶ人
+    \begin{align*}
+      0.9 \times u(11000) + 0.1 \times u(0) &< u(10,000) \\
+      0.009 \times u(11000) + 0.001 \times u(0) &< 0.01 \times u(10,000) \\
+      0.009 \times u(11000) + 0.991 \times u(0) &< 0.01 \times u(10,000) + 0.99 \times u(0)
+    \end{align*}
+    \item 従って、2つの質問は本質的には全く同じ選択肢の比較を意味している
+    \begin{itemize}
+      \item 質問1では$B \succsim A$であるにもかかわらず、質問2では$A \succsim B$でないと成り立たない回答をしている
+      \item 全く同じ選択肢から得られる効用水準が異なる: 完備性を満たさない
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{その他}
+  \begin{itemize}
+    \item フレーミング効果
+    \begin{itemize}
+      \item 質問の文面によって答えが変わる
+    \end{itemize}
+    \item アンカリング効果
+    \begin{itemize}
+      \item 客観的には質問と一切関係ない出来事が意思決定に影響を及ぼす
+    \end{itemize}
+    \item ヒューリスティックバイアス
+    \begin{itemize}
+      \item 全ての情報を精査することなく、直感的に思いつく・利用しやすい情報のみに基づいて意思決定を下す
+    \end{itemize}
+    \item おなかがへっていると買うものが増える
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item 経済学の分析には、数学的な扱いを容易にするための仮定が課されている
+    \item 伝統的経済学で仮定されてきた人間の行動特性は多くの意思決定を説明することができるが、そうではないものも存在している
+    \item 従来のフレームワークを拡張し、予測から逸脱した行動をも説明できるようにするのが行動経済学
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{宿題？}
+  \begin{itemize}
+    \item 大竹先生の『行動経済学の使い方』を輪読
+    \item 担当章を決めて要約
+    とかどうですか
+  \end{itemize}
+\end{frame}
+
+\end{document}
