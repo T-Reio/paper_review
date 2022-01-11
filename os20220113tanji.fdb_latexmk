@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1641817146 "c:/Users/easyu/paper_review/paper_review/os20220113tanji.dvi" "c:/Users/easyu/paper_review/paper_review/os20220113tanji.pdf" "c:/Users/easyu/paper_review/paper_review/os20220113tanji" 1641817147
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.dvi" 1641817146 11464 37dfc3cacb210f02fae56e2c915d1866 "latex"
+["dvipdf"] 1641866637 "c:/Users/easyu/paper_review/os20220113tanji.dvi" "c:/Users/easyu/paper_review/os20220113tanji.pdf" "c:/Users/easyu/paper_review/os20220113tanji" 1641866638
+  "c:/Users/easyu/paper_review/os20220113tanji.dvi" 1641866637 14368 e75477b8076ca566641ddd5d4798a2d8 "latex"
   (generated)
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.pdf"
-["latex"] 1641817144 "os20220113tanji.tex" "c:/Users/easyu/paper_review/paper_review/os20220113tanji.dvi" "os20220113tanji" 1641817147
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.aux" 1641817146 1247 2d7e92135291f452865c9035e42ac854 ""
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.tex" 1641817143 2087 39664d5c5abef58a9f23e6c1b857f3b8 ""
+  "c:/Users/easyu/paper_review/os20220113tanji.pdf"
+["latex"] 1641866635 "os20220113tanji.tex" "c:/Users/easyu/paper_review/os20220113tanji.dvi" "os20220113tanji" 1641866638
+  "c:/Users/easyu/paper_review/os20220113tanji.aux" 1641866637 1395 2d0181f7bdbf9c1a94b662554089ce14 ""
+  "c:/Users/easyu/paper_review/os20220113tanji.tex" 1641866634 2173 4495a2c5f1fb6abc812c979901dae6c5 ""
   "c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1541079609 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "c:/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty" 1541081017 24580 144573175d90c8e36676f97ae1d11ec2 ""
   "c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1541081017 8237 3b62ef1f7e2c23a328c814b3893bc11f ""
@@ -170,13 +170,14 @@
   "c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty" 1541083381 55589 34128738f682d033422ca125f82e5d62 ""
   "c:/texlive/2018/texmf-dist/tex/platex/jsclasses/minijs.sty" 1541079774 1794 6a02cba3872d93dd44ea83f106e77776 ""
   "c:/texlive/2018/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty" 1541081746 31631 abff11275484123b5318dc1e37f7cd96 ""
-  "os20220113tanji.aux" 1641817146 1247 2d7e92135291f452865c9035e42ac854 ""
-  "os20220113tanji.nav" 1641817146 395 640a03f4d3f0f705896c1d8375ddfa75 ""
-  "os20220113tanji.out" 1641817146 54 05b9ff7757fe6a446d8f294b02146d28 ""
-  "os20220113tanji.tex" 1641817143 2087 39664d5c5abef58a9f23e6c1b857f3b8 ""
+  "fig_tab/os20220113/T1.png" 1641865312 68474 023987315dee5b79c5710b73b936b2a6 ""
+  "os20220113tanji.aux" 1641866637 1395 2d0181f7bdbf9c1a94b662554089ce14 ""
+  "os20220113tanji.nav" 1641866637 483 2eb1cf7e247973bd2380314bee32ad57 ""
+  "os20220113tanji.out" 1641866637 54 05b9ff7757fe6a446d8f294b02146d28 ""
+  "os20220113tanji.tex" 1641866634 2173 4495a2c5f1fb6abc812c979901dae6c5 ""
   (generated)
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.log"
-  "os20220113tanji.nav"
   "os20220113tanji.aux"
-  "c:/Users/easyu/paper_review/paper_review/os20220113tanji.dvi"
   "os20220113tanji.out"
+  "c:/Users/easyu/paper_review/os20220113tanji.dvi"
+  "c:/Users/easyu/paper_review/os20220113tanji.log"
+  "os20220113tanji.nav"
