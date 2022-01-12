@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1641973184 "c:/Users/easyu/paper_review/os20220113tanji.dvi" "c:/Users/easyu/paper_review/os20220113tanji.pdf" "c:/Users/easyu/paper_review/os20220113tanji" 1641973188
-  "c:/Users/easyu/paper_review/os20220113tanji.dvi" 1641973184 140100 6a57db72e9790d89de4ae810c358ab87 "latex"
+["dvipdf"] 1641999596 "c:/Users/easyu/paper_review/os20220113tanji.dvi" "c:/Users/easyu/paper_review/os20220113tanji.pdf" "c:/Users/easyu/paper_review/os20220113tanji" 1641999601
+  "c:/Users/easyu/paper_review/os20220113tanji.dvi" 1641999596 177756 16370fa9de103894ecb4a45b6a471b46 "latex"
   (generated)
   "c:/Users/easyu/paper_review/os20220113tanji.pdf"
-["latex"] 1641973174 "os20220113tanji.tex" "c:/Users/easyu/paper_review/os20220113tanji.dvi" "os20220113tanji" 1641973187
-  "c:/Users/easyu/paper_review/os20220113tanji.aux" 1641973184 8028 4302ca7e7f26b6cf6ab5a5f1e73e1142 ""
-  "c:/Users/easyu/paper_review/os20220113tanji.tex" 1641973163 17054 bb16e699f0af6be28ccd4b730a876326 ""
+["latex"] 1641999582 "os20220113tanji.tex" "c:/Users/easyu/paper_review/os20220113tanji.dvi" "os20220113tanji" 1641999601
+  "c:/Users/easyu/paper_review/os20220113tanji.aux" 1641999596 9690 7f67560ab7a5b505a44fa39ed4231b6c ""
+  "c:/Users/easyu/paper_review/os20220113tanji.tex" 1641999581 23002 46209433772104660ae0ef305d20416e ""
   "c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1541079609 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "c:/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty" 1541081017 24580 144573175d90c8e36676f97ae1d11ec2 ""
   "c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1541081017 8237 3b62ef1f7e2c23a328c814b3893bc11f ""
@@ -176,6 +176,8 @@
   "fig_tab/os20220113/F4.png" 1641866803 48405 bf9713518cdf89755d74e204d9a53576 ""
   "fig_tab/os20220113/F5.png" 1641866851 44944 95666be1892d2736adb88be159de8b3b ""
   "fig_tab/os20220113/F6.png" 1641866868 132181 4609a312cce7ce1ac567575d29fea524 ""
+  "fig_tab/os20220113/F7.png" 1641867091 65793 96f47c3aa8ced18666e3842c697c0fcc ""
+  "fig_tab/os20220113/F8.png" 1641867110 46338 185a4fb7fed2690b9d356a8e93ccf60f ""
   "fig_tab/os20220113/FA1.png" 1641962055 531108 aee37ab315a564b5d2aa67bc9c96f4bc ""
   "fig_tab/os20220113/FA7.png" 1641971237 34610 949b361ba3c85fe2a6571cccef1ab5b7 ""
   "fig_tab/os20220113/FA8.png" 1641971892 223938 2da1a91854997f9dc7771eabdf145439 ""
@@ -183,13 +185,15 @@
   "fig_tab/os20220113/T1_1.png" 1641866681 126646 7525819255a955b72d02d3fbff1db93d ""
   "fig_tab/os20220113/T2.png" 1641866762 137111 4f3dc77b8dda926db0a66eea8bba990d ""
   "fig_tab/os20220113/T3.png" 1641866829 116050 5a3c843958b05a54710745f912cf35ff ""
-  "os20220113tanji.aux" 1641973184 8028 4302ca7e7f26b6cf6ab5a5f1e73e1142 ""
-  "os20220113tanji.nav" 1641973184 4402 3da66a9265f0bdce6979d21d71818e12 ""
-  "os20220113tanji.out" 1641973184 355 a5facc85d238579162fa68ab72449513 ""
-  "os20220113tanji.tex" 1641973163 17054 bb16e699f0af6be28ccd4b730a876326 ""
+  "fig_tab/os20220113/T4.png" 1641867126 69154 491c299992ca7e53bb8723cbe1e98a7b ""
+  "fig_tab/os20220113/T4_1.png" 1641867152 136950 e141dfedef21f482c3cbd69cc133ff84 ""
+  "os20220113tanji.aux" 1641999596 9690 7f67560ab7a5b505a44fa39ed4231b6c ""
+  "os20220113tanji.nav" 1641999596 5387 803f67b781d539316e6962a7b3b06b6c ""
+  "os20220113tanji.out" 1641999596 400 3c2cfd6dce9c8e2d9e2b82fa3ab04074 ""
+  "os20220113tanji.tex" 1641999581 23002 46209433772104660ae0ef305d20416e ""
   (generated)
-  "c:/Users/easyu/paper_review/os20220113tanji.log"
-  "os20220113tanji.out"
   "os20220113tanji.aux"
   "c:/Users/easyu/paper_review/os20220113tanji.dvi"
   "os20220113tanji.nav"
+  "os20220113tanji.out"
+  "c:/Users/easyu/paper_review/os20220113tanji.log"

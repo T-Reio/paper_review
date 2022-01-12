@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  12 JAN 2022 16:39
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  12 JAN 2022 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,13 +1161,6 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (1.4111pt too wide) has occurred while \output is active
-[][]  [] 
- []
-
-[28
-
-]
 File: fig_tab/os20220113/F4.png Graphic file (type bmp)
 <fig_tab/os20220113/F4.png>
 
@@ -1175,7 +1168,21 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [][]  [] 
  []
 
+[28
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
 [29
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[30
 
 ]
 File: fig_tab/os20220113/T3.png Graphic file (type bmp)
@@ -1185,7 +1192,7 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [][]  [] 
  []
 
-[30
+[31
 
 ]
 File: fig_tab/os20220113/F5.png Graphic file (type bmp)
@@ -1195,19 +1202,9 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [][]  [] 
  []
 
-[31
-
-]
-Overfull \hbox (1.4111pt too wide) has occurred while \output is active
-[][]  [] 
- []
-
 [32
 
 ]
-File: fig_tab/os20220113/F6.png Graphic file (type bmp)
-<fig_tab/os20220113/F6.png>
-
 Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [][]  [] 
  []
@@ -1222,11 +1219,88 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [34
 
 ]
+File: fig_tab/os20220113/F6.png Graphic file (type bmp)
+<fig_tab/os20220113/F6.png>
+
 Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 [][]  [] 
  []
 
 [35
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[36
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[37
+
+]
+File: fig_tab/os20220113/F7.png Graphic file (type bmp)
+<fig_tab/os20220113/F7.png>
+
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[38
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[39
+
+]
+File: fig_tab/os20220113/F8.png Graphic file (type bmp)
+<fig_tab/os20220113/F8.png>
+
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[40
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[41
+
+]
+File: fig_tab/os20220113/T4.png Graphic file (type bmp)
+<fig_tab/os20220113/T4.png>
+File: fig_tab/os20220113/T4_1.png Graphic file (type bmp)
+<fig_tab/os20220113/T4_1.png>
+
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[42
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[43
+
+]
+Overfull \hbox (1.4111pt too wide) has occurred while \output is active
+[][]  [] 
+ []
+
+[44
 
 ]
 \tf@nav=\write8
@@ -1238,25 +1312,25 @@ Overfull \hbox (1.4111pt too wide) has occurred while \output is active
 \tf@snm=\write10
 \openout10 = `os20220113tanji.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
  (c:/Users/easyu/paper_review/os20220113tanji.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 531.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 531.
 Package rerunfilecheck Info: File `os20220113tanji.out' has not changed.
-(rerunfilecheck)             Checksum: A5FACC85D238579162FA68AB72449513;355.
+(rerunfilecheck)             Checksum: 3C2CFD6DCE9C8E2D9E2B82FA3AB04074;400.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23311 strings out of 493281
- 474237 string characters out of 6148126
- 685006 words of memory out of 5000000
- 26728 multiletter control sequences out of 15000+600000
+ 23345 strings out of 493281
+ 474719 string characters out of 6148126
+ 686006 words of memory out of 5000000
+ 26758 multiletter control sequences out of 15000+600000
  44141 words of font info for 143 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  60i,16n,95p,854b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on os20220113tanji.dvi (35 pages, 140100 bytes).
+Output written on os20220113tanji.dvi (44 pages, 177756 bytes).

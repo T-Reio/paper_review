@@ -374,14 +374,35 @@
 \frame{\sectionpage}
 
 \begin{frame}{Racial Differences}
-  
-\end{frame}
-
-\begin{frame}{}
   \begin{figure}
     \centering
     \includegraphics[scale = .55]{fig_tab/os20220113/F4}
   \end{figure}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item Subsample analyses revealed that exposure to police killings has no impact on white and Asian students.
+    \begin{itemize}
+      \item Disproportionate burden police violence may have on underrepresented minorities (Gershenson and Hayes, 2018).
+      \item Race is the single strongest predictor of perceptions of law enforcement (Taylor et al., 2001)
+      \item blacks and Hispanics are significantly more likely to believe that police use of force is excessive or unjustified (Leiber, Nalla, and Farnworth 1998; Weitzer and Tuch 2002).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{the Deceased's Race}
+  \begin{itemize}
+    \item Because race is obviously not randomly  assigned, the effect heterogeneity of race of the deceased is likely to be correlated with other factors.
+    \item flexible controls allowing for differential treatment effects along a range of neighborhood, incident, and individual characteristics.
+    \begin{align*}
+      y_{i, t} = & \delta_i + \lambda_{n, t} + \omega_{c, t} + \beta_{BH} \textit{Post} \times \textit{Shoot} \times \textit{BlackHispanic} \\
+      &+ \beta_{WA} \textit{Post} \times \textit{Shoot} \times \textit{WhiteAsian} + \textit{Post} \times \textit{Shoot} \times \mathbf{X}_i \boldsymbol{\gamma} + \epsilon_{i, t}
+    \end{align*}
+    \begin{itemize}
+      \item conditional on exposure, black and Hispanic students respond differently to police violence depending on the race of the person killed
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{}
@@ -398,8 +419,28 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}{}
+  \begin{itemize}
+    \item The effects of police violence are unlikely to be driven by those incidents with the most gunfire or the deadliest shootouts.
+    \item The most damaging events are police killings of unarmed individuals.
+    \item the findings suggest that students may be responding to the perceived reasonableness or legitimacy of officer actions as much as to the use of force.
+    \item However, community perceptions of “reasonableness” often depend on contextual factors similar to those assessed here, with police violence against unarmed minorities drawing particular concern (Hall, Hall, and Perry 2016)
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{Comparing Police and Criminal Violence}
-  
+  \begin{itemize}
+    \item A simple model of violent exposure
+    cannot fully explain the observed effects of police killings on student achievement.
+    \begin{align*}
+      y_{i, t} = & \delta_i + \lambda_{n, t} + \omega_{c, t} + \\
+      & \sum_{\tau = -3}^3 \beta_{\tau} \textit{Police}_{\tau} + \sum_{\tau = -3}^3 \gamma_{\tau} \textit{NonPolice}_{\tau} + \mathbf{X}_{b, t} \boldsymbol{\gamma} + \epsilon_{i, t}
+    \end{align*}
+    \item The marginal effects differ suggests that students may view police killings and criminal homicides as unique phenomena and that different mechanisms might drive their to each.
+    \begin{itemize}
+      \item criminal homicides of whites/Asians and blacks/Hispanics are associated with nearly identical decreases in GPA.
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{}
@@ -414,10 +455,76 @@
 
 \begin{frame}{Identification}
   \begin{itemize}
+    \item Main regression equation cannot capture the long-run ramifications because exposure is absorbed by fixed effects.
+    \begin{itemize}
+      \item Compare graduation rates of students in expected grades.
+    \end{itemize}
     \item For student $i$ of expected grade $g$,
     \begin{align*}
       y_{i, g} = \delta_{n, c} + \sum_{\tau = 9}^{16} \beta_{\tau} \textit{Shoot}_{i, g} \times \textit{Grade}_{\tau} + \lambda \textit{Shoot}_{i, g} + \mathbf{X}_i \boldsymbol{\gamma} + \epsilon_{i, g}
     \end{align*}
+    \begin{itemize}
+      \item Students with $\tau \geq 13$ are not exposed to the treatment.
+      \item This specification does not allow to include indivudal fixed effects.
+      \item demographic covariates: a student's school, race, sex, poverty status, household language, parental education, and eighth-grade proficiency
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Educational Attainment}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .5]{fig_tab/os20220113/F7}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Educational Attaiment}
+  \begin{itemize}
+    \item Significant differences in long-run achievement associated with exposure to police violence.
+    \begin{itemize}
+      \item Average treatment estimate on cumulative GPA (0.029 points) $\fallingdotseq$ average estimate on semester GPA (0.027 points)
+      \item Exposure in the 9th grade predicts a 1.7 percentage point decrease in the graduation rate.
+      \item Exposure to police violence is associated with significant decreases in college enrollment among 9th and 10th graders of 0.09 percentage points
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Race-Specific Effects}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .55]{fig_tab/os20220113/F8}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item The results indicate that police killings may have large long-run effects on local communities
+    \begin{itemize}
+      \item causal evidence supporting the link between adverse childhood experiences and educational attainment (Harris 1983; Broberg, Dyregrov, and Lilled 2005; Porche et al.
+      2011)
+    \end{itemize}
+    \item However, police violence differs from many other forms of trauma in one important dimension.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Robustness}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .4]{fig_tab/os20220113/T4}
+    \includegraphics[scale = .4]{fig_tab/os20220113/T4_1}
+  \end{figure}
+\end{frame}
+
+\section{Conclusion}
+\frame{\sectionpage}
+\begin{frame}{Concluding Remarks}
+  \begin{itemize}
+    \item This article provides the first causal evidence of the impact of police killings on nearby students.
+    \item Results indicate that police violence may
+    exacerbate racial inequality in education
+    \item This paper does not account for effects on younger children or for other returns to schooling (Lochner and Moretti 2004), this figure likely underestimates the total educational costs of police killings
+    \item Critically examine the appropriate role of law enforcement in local
+    communities.
   \end{itemize}
 \end{frame}
 
