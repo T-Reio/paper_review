@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Background and Data}{9}{0}{2}
-\beamer@sectionintoc {3}{Identification Strategy}{16}{0}{3}
-\beamer@sectionintoc {4}{Main Results}{20}{0}{4}
-\beamer@sectionintoc {5}{Mechanism}{27}{0}{5}
-\beamer@sectionintoc {6}{Long-Run Effects}{36}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{43}{0}{7}
