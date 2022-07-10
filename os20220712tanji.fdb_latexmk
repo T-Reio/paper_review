@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1657440487 "c:/Users/easyu/paper_review/os20220712tanji.dvi" "c:/Users/easyu/paper_review/os20220712tanji.pdf" "c:/Users/easyu/paper_review/os20220712tanji" 1657440489
-  "c:/Users/easyu/paper_review/os20220712tanji.dvi" 1657440487 61104 8a3551f579511144043fd314ebf9c4e2 "latex"
+["dvipdf"] 1657442465 "c:/Users/easyu/paper_review/os20220712tanji.dvi" "c:/Users/easyu/paper_review/os20220712tanji.pdf" "c:/Users/easyu/paper_review/os20220712tanji" 1657442466
+  "c:/Users/easyu/paper_review/os20220712tanji.dvi" 1657442464 61356 460000a0c2d2132cdc1eaea4d53c48c2 "latex"
   (generated)
   "c:/Users/easyu/paper_review/os20220712tanji.pdf"
-["latex"] 1657440481 "os20220712tanji.tex" "c:/Users/easyu/paper_review/os20220712tanji.dvi" "os20220712tanji" 1657440489
-  "c:/Users/easyu/paper_review/os20220712tanji.aux" 1657440486 5375 f4c4ca175d8406127b14296a03d40e50 ""
-  "c:/Users/easyu/paper_review/os20220712tanji.tex" 1657440468 4347 6324c594917513373bb66d52f0830d48 ""
+["latex"] 1657442459 "os20220712tanji.tex" "c:/Users/easyu/paper_review/os20220712tanji.dvi" "os20220712tanji" 1657442466
+  "c:/Users/easyu/paper_review/os20220712tanji.aux" 1657442464 5375 f4c4ca175d8406127b14296a03d40e50 ""
+  "c:/Users/easyu/paper_review/os20220712tanji.tex" 1657442445 4418 d0ccd6537a8fbacd5b9745e1cd4c7485 ""
   "c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1640065499 40635 c40361e206be584d448876bba8a64a3b ""
   "c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty" 1640065504 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1640066141 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -195,15 +195,15 @@
   "c:/texlive/2021/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty" 1640067863 3307 beacc1f45634e750882c563dc92e7711 ""
   "c:/texlive/2021/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty" 1640067863 39120 da1a06c02c7e9594074a1882c9f6d985 ""
   "fig_tab/os20220708/F1.png" 1657264144 87073 ed7f8462a5b05a96d6b77d0468a97a78 ""
-  "os20220712tanji.aux" 1657440486 5375 f4c4ca175d8406127b14296a03d40e50 "latex"
-  "os20220712tanji.nav" 1657440486 2790 71f9241bc054b7d8dc3bd298c3571ff0 "latex"
-  "os20220712tanji.out" 1657440486 387 4a83f2142165a90641baf7b661d4da46 "latex"
-  "os20220712tanji.tex" 1657440468 4347 6324c594917513373bb66d52f0830d48 ""
-  "os20220712tanji.toc" 1657440486 346 ffa49385633f60f907e103e9500e80f2 "latex"
+  "os20220712tanji.aux" 1657442464 5375 f4c4ca175d8406127b14296a03d40e50 "latex"
+  "os20220712tanji.nav" 1657442464 2790 71f9241bc054b7d8dc3bd298c3571ff0 "latex"
+  "os20220712tanji.out" 1657442464 387 4a83f2142165a90641baf7b661d4da46 "latex"
+  "os20220712tanji.tex" 1657442445 4418 d0ccd6537a8fbacd5b9745e1cd4c7485 ""
+  "os20220712tanji.toc" 1657442464 346 ffa49385633f60f907e103e9500e80f2 "latex"
   (generated)
-  "os20220712tanji.aux"
+  "c:/Users/easyu/paper_review/os20220712tanji.log"
   "c:/Users/easyu/paper_review/os20220712tanji.dvi"
-  "os20220712tanji.toc"
+  "os20220712tanji.aux"
   "os20220712tanji.out"
   "os20220712tanji.nav"
-  "c:/Users/easyu/paper_review/os20220712tanji.log"
+  "os20220712tanji.toc"
