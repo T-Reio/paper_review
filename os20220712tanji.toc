@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
-\beamer@sectionintoc {2}{Historical Background}{13}{0}{2}
-\beamer@sectionintoc {3}{Data}{21}{0}{3}
-\beamer@sectionintoc {4}{Empirical Strategy}{26}{0}{4}
-\beamer@sectionintoc {5}{Main Results}{29}{0}{5}
-\beamer@sectionintoc {6}{Mechanisms}{36}{0}{6}
-\beamer@sectionintoc {7}{Conclusions}{51}{0}{7}
