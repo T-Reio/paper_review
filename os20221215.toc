@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Data}{10}{0}{2}
 \beamer@sectionintoc {3}{Decomposing Differences in Pollution Exposure}{16}{0}{3}
-\beamer@sectionintoc {4}{The Clean Air Act and Relative Changes in Pollution Exposure}{25}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{27}{0}{5}
+\beamer@sectionintoc {4}{The Clean Air Act and Relative Changes in Pollution Exposure}{28}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{42}{0}{5}

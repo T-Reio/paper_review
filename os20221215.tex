@@ -224,6 +224,9 @@
 \begin{frame}{Oaxaca-Blinder decinoisution}
   \begin{itemize}
     \item Formally decomposing cross-sectional differences (Oaxaca, 1973; Blinder, 1973).
+    \begin{align*}
+      P_b - P_w = (X_b - X_w)\beta_b + (\beta_b - \beta_w)X_w
+    \end{align*}
     \item Observable differences in individual and household characteristics are able to explain at most 8 percent of the gap in mean differences in any given year.
   \end{itemize}
 \end{frame}
@@ -253,29 +256,197 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Controlling for Naeghborhood Characteristics}
+\begin{frame}{Neighborhood Characteristics}
   \begin{itemize}
     \item Socioeconomic Characteristics
     \begin{itemize}
       \item African Americans tend to be concentrated in census tracts with relatively disadvantaged neighbors.
+      \item mean public assistance income, the teen pregnancy rate, years of schooling, the share living in single family residences, the home ownership rate, miles of major highways, and total facility PM2.5 emissions
     \end{itemize}
     \begin{figure}
       \centering
-      \includegraphics[scale = .45]{F3C.png}
+      \includegraphics[scale = .4]{F3C.png}
     \end{figure}
   \end{itemize}
 \end{frame}
 
+\begin{frame}{}
+  \begin{table}
+    \begin{tabular}{cc}
+      \begin{minipage}{.45\textwidth}
+        \begin{itemize}
+          \item Black-White differences in neighborhood characteristics explain 0.324 of the documented 1.617 gap in PM2.5 exposure.
+          \item tract home ownership rate explain about 20 percent of the difference in PM2.5 exposure.
+          \item Education translates into substantially less pollution exposure for Whites than it does for Blacks.
+        \end{itemize}
+      \end{minipage} &
+      \begin{minipage}{.55\textwidth}
+        \begin{figure}
+          \centering
+          \includegraphics[scale = .4]{TB6.png}
+        \end{figure}
+      \end{minipage}
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}{The Role of Relative Mobility}
+  \begin{itemize}
+    \item Is the improvement due to the relative movement of African Americans?
+    \item To compare the counterfactual pollustion exposure in 2015 (without mobility), the authors use Decennial Census.
+    \begin{itemize}
+      \item Block-level population counts for non-Hispanic Whites and African Americans.
+    \end{itemize}
+    \item If populations were fixed in their 2000 locations, the gain would have been \SI[per-mode=symbol]{0.89}{\micro \gram \per \cubic \meter} instead of \SI[per-mode=symbol]{1.02}{\micro \gram \per \cubic \meter} (12.7\% of the total improvement.)
+    \item The negative relationship between White population shares and pollution levels has weakened over time.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .7]{T2.png}
+  \end{figure}
+\end{frame}
+
 \section{The Clean Air Act and Relative Changes in Pollution Exposure}
 \frame{\sectionpage}
+\begin{frame}{The Clean Air Act and Relative Changes in Pollution Exposure}
+  \begin{itemize}
+    \item African American neighborhoods appears to have had greater improvements in air quality
+    \item Clean Air Act (CAA)
+    \begin{itemize}
+      \item regulations governing both stationary sources (factories) and mobile sources (cars).
+    \end{itemize}
+    \item national ambient air quality standards (NAAQS): maximum allowable concentrations of criterion air pollutants (for stationary sources)
+    \begin{itemize}
+      \item Each in year in July, the set of counties are checked (by EPA) if they violate their standard.
+      \item If they violate, the EPA can withhold federal funding for the state.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{History of the CAA Policy Changes}
+  \begin{itemize}
+    \item In 1997, the EPA tightened the NAAQS regulation about PM2.5 for the first time.
+    \item After years of controversy in the court, the new standards were implemented in April 2005.
+    \begin{itemize}
+      \item Revisions of the standard occured in 2006 and went into effect in 2009
+    \end{itemize}
+    \item Because changes in 2005 was mandatory on reductions in annual PM 2.5, they focus this policy implementation.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Racial Distribution and Pollution Decile}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .4]{F4.png}
+  \end{figure}
+\end{frame}
+
 \begin{frame}{}
-  
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{F5.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Impact of CAA: Identification Strategy}
+  \begin{itemize}
+    \item Standard DID and event-study design
+    \item For person $i$ residing commuting zone $c$ in year $t$,
+    \begin{align*}
+      P_{ict} = \sum_{t = 2000}^{2015} \beta_t (\mathbb{1}[\text{Nonattain}_c] \times \mathbb{1}[\text{year}_t = t]) + \gamma_c + \rho_t + \epsilon_{ict}
+    \end{align*}
+    \begin{itemize}
+      \item 62 CZs consists of 250 counties in 20 states were designated as nonattainment areas.
+      \item If the CZ violates the standard of pollutants, the indicator takes one.
+      \item weighted by survey weights
+      \item SEs are clustered by commuting zone
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{F6.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .5]{FB4.png}
+  \end{figure}
+  \begin{itemize}
+    \item Standard DID
+    \begin{align*}
+      P_{ict} = \beta (\mathbb{1}[\text{Nonattain}_c] \times \mathbb{1}[\text{year}_t = t]) + \gamma_c + \rho_t + \epsilon_{ict}
+    \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{T3.png}
+  \end{figure}
+  \begin{itemize}
+    \item Within-county improvements in air quality were slightly less for African Americans than for non-Hispanic Whites (statistically insignificant).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Summary of DID}
+  \begin{itemize}
+    \item There have been large improvements over time in air quality for both African Americans and non-Hispanic Whites.
+    \begin{itemize}
+      \item PM2.5 levels fell by \SI[per-mode=symbol]{1.23}{\micro \gram \per \cubic \meter} in nonattainment counties in
+      the years after the regulation went into place.
+    \end{itemize}
+    \item Mobile-source regulations, as well as stationary sources are national in scope and have also led to signficant national improvements in air quality over this time period.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Distributional Impacts of PM2.5 NAAQS}
+  \begin{itemize}
+    \item DID tells us about the ATE.
+    \item Quantile Regression Estimates
+    \begin{itemize}
+      \item 
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .7]{F7.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .65]{F8.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .5]{T4.png}
+  \end{figure}
 \end{frame}
 
 \section{Conclusion}
 \frame{\sectionpage}
-\begin{frame}{}
-  
+\begin{frame}{Concluding Remarks}
+  \begin{itemize}
+    \item This paper add to the small but growing literature using high-resolution, nationwide data on pollution to examine racial differences in potential pollution exposure
+    \item Racial gaps in exposure have narrowed at each quantile of the PM2.5 distribution
+    \item Fidings suggest that the CAA has likely played a significant role in reducing racial gaps in exposure to air pollution.
+  \end{itemize}
 \end{frame}
 
 \end{document}
