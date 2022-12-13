@@ -15,6 +15,7 @@
 \usepackage{here}
 \usepackage{lscape}
 \usepackage{ascmac}
+\usepackage{siunitx}
 \usepackage{tabularx}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \hypersetup{% hyperrefオプションリスト
@@ -59,7 +60,7 @@
 \frame{\tableofcontents}
 
 \frame{\sectionpage}
-\begin{frame}{Motivation}
+\begin{frame}{Motivation \& Literature}
   \begin{itemize}
     \item The existing evidence about racial disparities in pollution exposure is largely piecemeal and indirect.
     \begin{itemize}
@@ -71,37 +72,198 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Procedure}
+\begin{frame}{This Paper}
   \begin{itemize}
     \item Data: newly available national data on PM2.5 exposure from 2000 to 2015
     \begin{itemize}
       \item 1km-grid measures of ambient air pollution levels for the entire United States
     \end{itemize}
+    \item Analyses
+    \begin{enumerate}
+      \item Document racial gaps in ambient exposure to PM 2.5 and the time-series changes between 2000 and 2015.
+      \item Explain the gaps by differences in individual and/or neighborhood characteristics.
+      \item Explore the contribution of changes in \textbf{relative mobility} and \textbf{relative improvements} in neighborhood air quality.
+      \item Use quantile regression to see the impact of the Clean Air Act and National Ambient Air Quality Standards (NAAQS).
+    \end{enumerate}
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Summary of Results}
+  \begin{enumerate}
+    \item African Americans tend to live in the most polluted areas nationally, but the gap has been closing.
+    \begin{itemize}
+      \item Mean gap in pollution exposure: \SI[per-mode=symbol]{1.5}{\micro \gram \per \cubic \meter} $\rightarrow$ \SI[per-mode=symbol]{0.5}{\micro \gram \per \cubic \meter}
+    \end{itemize}
+    \item differences in individual or household-level characteristics such as income, explain only a tiny part of observed convergence in pollution levels.
+    \begin{itemize}
+      \item relative mobility differences or changes in Black-White population shares are not able to explain the observed convergence in pollution exposure
+    \end{itemize}
+    \item Much of this improvement of air quality around African Americans' is driven by the introduction of the PM2.5 NAAQS.
+    \begin{itemize}
+      \item Spatially targeted nature of the CAA regulations contributes to the observed convergence in
+      mean PM2.5 differences between Blacks and Whites.
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
 \begin{frame}{Contributions}
-  
+  \begin{enumerate}
+    \item The first paper to link national representative survey to nationwide grid of PM 2.5 mesurement.
+    \begin{itemize}
+      \item Explored the causal determinants of narrowing pollution gaps between racial groups over time.
+      \item Explore how much variation in pollution exposure be explained by individual endowments (income), aggregate neighborhood-level (average years of schooling) characteristics.
+      \item External validity (the spatially continuous PM2.5 measurements)
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{}
+  \begin{enumerate}
+    \setcounter{enumi}{1}
+    \item Effects of environmental policy
+    and the Clean Air Act more specifically
+    \begin{itemize}
+      \item Previous literature estimates average effects of policies (Chay and Greenstone, 2003; Isen, Rossin-Slater, and Walker, 2017)
+      \item Applying unconditional quantile regression(Firpo, Fortin, and Lemieux, 2009), they can discuss the impact of the Clean Air Act on diffrent empirical moments of the nationwide pollution distribution
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\section{Data}
+\frame{\sectionpage}
+\begin{frame}{Background and Difficulties}
+  \begin{itemize}
+    \item Spatially-continuous satellite measurements of pollution correlates
+    \begin{itemize}
+      \item "out-of-sample" predictions: build a predictive model of a pollutant of interest by correlating EPA-monitor data with the observable characteristics (van Donkelaar, Martin, Brauer et al, 2016)
+    \end{itemize}
+    \item This paper uses a 1km by 1km resolution daily PM2.5 concentration data of 2000-2015 (Di, Kloog, Koutrakis et al., 2016).
+    \begin{itemize}
+      \item Satellite measurements are biased downward for high PM2.5 levels.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Data Construction}
+  \begin{itemize}
+    \item Individual-level data with pollution and racial identities
+    \begin{itemize}
+      \item 2000 Census long from
+      \item 2001-2015 American Community Surveys
+    \end{itemize}
+    \item Primary comparisons focus on the non-Hispanic White and African American populations.
+    \begin{itemize}
+      \item These are the largest and most-documented gaps
+      \item Lieber, Porter, Fernandez et al., 2017: Hispanic identity is more fluid over time than White or black racial identities.
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{}
   \begin{figure}
     \centering
-    \includegraphics[scale = .5]{F1.png}
-    \includegraphics[scale = .5]{F2.png}
+    \includegraphics[scale = 1]{F1.png}
+    % \includegraphics[scale = .5]{F2.png}
   \end{figure}
 \end{frame}
 
-\section{Data}
-\frame{\sectionpage}
-\begin{frame}{}
+\begin{frame}{Racial Gaps in Pollution Exposure}
+  \begin{itemize}
+    \item The observed racial gap in mean pollution exposure has declined by \SI[per-mode=symbol]{1.0}{\micro \gram \per \cubic \meter}  in 15 years.
+    \item This improvement in the Black-White pollution gap could potentially explain 4\% of the mortality gap improvement.
+    \begin{itemize}
+      \item Life expectancy is reduced by .61 years for each \SI[per-mode=symbol]{10}{\micro \gram \per \cubic \meter} (Pope III, Ezzati, and Dockery, 2015)
+      \item Over 2000-2015, the Black-White gap in life expectancy fell from about 5 years to 3.5 years (Arias, Xu, and Kochanek, 2019).
+    \end{itemize}
+    \item The gap in exposure is explained by census-tract differences (about \SI{5}{\square \kilo \meter}).
+  \end{itemize}
+\end{frame}
 
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    % \includegraphics[scale = .1]{F1.png}
+    \includegraphics[scale = .7]{F2.png}
+  \end{figure}
 \end{frame}
 
 \section{Decomposing Differences in Pollution Exposure}
 \frame{\sectionpage}
 \begin{frame}{}
-  
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .4]{TB2.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Conditional versus Unconditional Differences in Pollution Exposure}
+  \begin{itemize}
+    \item Differences in exposure conditional on the differences in individual characteristics.
+    \item Linear Regression: for individual $i$,
+    \begin{align*}
+      P_i = \gamma \mathbb{1}[\text{African American}_i] + X' \beta + \epsilon_i
+    \end{align*}
+    \begin{itemize}
+      \item $X_i$: individual income, age, education, number of children, gender, and an indicator for homeownership.
+      \item weighted by survey weights
+      \item SEs are clustered by commuting zone
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = 1]{F3AB.png}
+  \end{figure}
+  \begin{itemize}
+    \item Individual characteristics seems to explain almost none of the differences.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Oaxaca-Blinder decinoisution}
+  \begin{itemize}
+    \item Formally decomposing cross-sectional differences (Oaxaca, 1973; Blinder, 1973).
+    \item Observable differences in individual and household characteristics are able to explain at most 8 percent of the gap in mean differences in any given year.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{TB4.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Differences at Different Quantiles of the Pollution Distribution}
+  \begin{itemize}
+    \item Individual or household characteristics are able to explain differences in pollution exposure at other parts of the pollution distribution.
+    \item DiNardo, Fortin, and Lemieux (1996): re-weighted kernel density estimate
+    \begin{itemize}
+      \item estimate what the entire distribution of African American pollution exposure would look like if African Americans had the same observable characteristics
+    \end{itemize}
+    \item Again, individual characteristics are able to explain little of the observed pollution gap throughout the distribution.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{FB2.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Controlling for Naeghborhood Characteristics}
+  \begin{itemize}
+    \item Socioeconomic Characteristics
+    \begin{itemize}
+      \item African Americans tend to be concentrated in census tracts with relatively disadvantaged neighbors.
+    \end{itemize}
+    \begin{figure}
+      \centering
+      \includegraphics[scale = .45]{F3C.png}
+    \end{figure}
+  \end{itemize}
 \end{frame}
 
 \section{The Clean Air Act and Relative Changes in Pollution Exposure}
