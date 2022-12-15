@@ -273,14 +273,14 @@
 \begin{frame}{}
   \begin{table}
     \begin{tabular}{cc}
-      \begin{minipage}{.45\textwidth}
+      \begin{minipage}{.4\textwidth}
         \begin{itemize}
           \item Black-White differences in neighborhood characteristics explain 0.324 of the documented 1.617 gap in PM2.5 exposure.
           \item tract home ownership rate explain about 20 percent of the difference in PM2.5 exposure.
           \item Education translates into substantially less pollution exposure for Whites than it does for Blacks.
         \end{itemize}
       \end{minipage} &
-      \begin{minipage}{.55\textwidth}
+      \begin{minipage}{.6\textwidth}
         \begin{figure}
           \centering
           \includegraphics[scale = .4]{TB6.png}
@@ -411,9 +411,49 @@
 \begin{frame}{Distributional Impacts of PM2.5 NAAQS}
   \begin{itemize}
     \item DID tells us about the ATE.
-    \item Quantile Regression Estimates
+    \item Quantile Regression Estimates (Firpo et al., 2009)
     \begin{itemize}
-      \item 
+      \item Recentered influence function
+      \item Estimate the impact of nonattainment on the CDF of pollution to estimate the impact on a pollution quantile.
+      \item The causal effects of effect of the CAA's NAAQS in 2005.
+      \item Marginal effect of the CAA on the population share above a pollution cutoff by the probability density of pollution at that cutoff.
+    \end{itemize}
+    \item In short, they estimate $\beta$ in the following empirical model of each quantile.
+    \begin{align*}
+      P_{ict} = \beta (\mathbb{1}[\text{Nonattain}_c] \times \mathbb{1}[\text{year}_t = t]) + \gamma_c + \rho_t + \epsilon_{ict}
+    \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Decompositions Using RIF}
+  \begin{itemize}
+    \item RIF: Recentered Influence Functions: decompose differences in quantiles of the unconditional pollution distribution
+    \item Model of pollution $P$:
+    \begin{align*}
+      P = h(X, \epsilon)
+    \end{align*}
+    \begin{itemize}
+      \item Observed characteristics $X$ and unobservable one $\epsilon$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{itemize}
+    \item The unconditional partial effect of the shift in observed $X$ is written as follows.
+    \begin{align*}
+      \int \dfrac{dE[\text{RIF}(P, v) | X = x]}{dx}dF(x)
+    \end{align*}
+    \begin{itemize}
+      \item $\text{RIF}(P; v)$ is recentered influence function. 
+      \begin{align*}
+        \text{RIF}(P, q_{\tau}) = q_{\tau} + \dfrac{\tau - \mathbb{1}\{p \leq q_{\tau}\}}{f_p(q_{\tau})}
+      \end{align*}
+      where 
+      \begin{itemize}
+        \item $q_{\tau} = \inf_q \{q: F_P(q) \geq \tau\}$
+        \item $f_P(q_{\tau})$ is the density function of pollution $P$ evaluated at $q_{\tau}$.
+      \end{itemize}
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -432,10 +472,55 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}{CAA-Effects on Different Quantiles}
+  \begin{itemize}
+    \item the most significant effects of the new standards were to improve air quality in areas between the 50th and 90th percentiles of PM2.5 distribution.
+    \item On the other hand, the effect size is smaller in the 90th percentile than in the 50-80th percentiles.
+    \begin{itemize}
+      \item Most severely polluted areas: the San Joaquin Valley or parts of Southern California
+    \end{itemize}
+    \item Race-specific estimation
+    \begin{itemize}
+      \item African Americans have seen larger improvements in air quality relative to their non-Hispanic White counterparts (statistically insignificant).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{CAA Regulation and Racial Convergence}
+  \begin{itemize}
+    \item Tract-level population shares by race from the public-use American Community Survey 5-year files enable us to calculate counterfactual changes in pollution exposure.
+    \begin{itemize}
+      \item The actual gap in 2015 was \SI[per-mode = symbol]{.61}{\micro \gram \per \cubic \meter}
+      \item The counterfactual gap is \SI[per-mode = symbol]{.97}{\micro \gram \per \cubic \meter}
+      \item The actual change in the Black-White gap between 2005 and 2015 was \SI[per-mode = symbol]{.59}{\micro \gram \per \cubic \meter}
+    \end{itemize}
+    \item We would have observed a \SI[per-mode = symbol]{.23}{\micro \gram \per \cubic \meter} improvement in the Black-White gap in the absence of the policy
+    \item Thus, the CAA can account for over 60\% of the relative improvement in Black-White outcomes.
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{}
   \begin{figure}
     \centering
     \includegraphics[scale = .5]{T4.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Mobility Responses}
+  \begin{itemize}
+    \item Populations shifted in response to the CAA-induced changes in air quality
+    \item Non-Hispanic Whites are moving to the set of urban areas
+    \begin{itemize}
+      \item the areas that saw the largest treatment effects from the Clean Air Act's nonattainment designation are also the areas where the share of African Americans declined the most.
+    \end{itemize}
+    \item The CAA improved air quality in cities with relatively higher Black population shares, but as those cities became cleaner they also became more White.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+    \centering
+    \includegraphics[scale = .6]{FB7.png}
   \end{figure}
 \end{frame}
 
